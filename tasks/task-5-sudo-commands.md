@@ -8,9 +8,9 @@
 
 ```bash
 sudo -l
-
+```
 ##### Na máquina do DEBIAN do TryHackMe:
-
+```
 user@debian:~$ sudo -l
 
 #Saída:
