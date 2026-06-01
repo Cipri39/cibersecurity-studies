@@ -1,8 +1,8 @@
-x#### Task 5 – Sudo Commands
+#### Task 5 – Sudo Commands
 
 ##### Objetivo da Task
 
-verificar quais comandos um usuário pode executar como root.
+ - verificar quais comandos um usuário pode executar como root.
 
 ##### Comando principal - Lista todos os comandos que o usuário atual pode executar com o sudo.
 
