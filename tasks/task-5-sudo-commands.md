@@ -13,7 +13,7 @@ sudo -l
 
 user@debian:~$ sudo -l
 
-##### Saída:
+# Saída:
 
 User user may run the following commands on debian:
     (root) NOPASSWD: /usr/bin/find

