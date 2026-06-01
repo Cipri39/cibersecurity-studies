@@ -34,7 +34,9 @@ env_keep+=LD_PRELOAD
 ##### Agora criamos um Codigo C malicioso:
 
 ```bash 
-cd /home/user/tools/sudo   $ O lab vem com um script em c pro shell root
+cd /home/user/tools/sudo   
+#O lab vem com um script em c pro shell root
+
 nano preload.c
 ```
 ##### Conteúdo do scrip preload.c:
