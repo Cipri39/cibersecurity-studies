@@ -25,9 +25,9 @@ User user may run the following commands on debian:
 ```
 #Saída: 
 
-env_keep+=LD_PRELOAD` 
+env_keep+=LD_PRELOAD 
 
- - $ ou seja, a variável LD_PRELOAD é preservada quando você usa sudo.
+#Ou seja, a variável LD_PRELOAD é preservada quando você usa sudo.
 ```
 ##### Agora criamos um Codigo C malicioso:
 
