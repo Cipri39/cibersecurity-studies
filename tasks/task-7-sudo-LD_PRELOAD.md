@@ -23,6 +23,8 @@ User user may run the following commands on debian:
  - SETENV = permite manter variáveis de ambiente (como LD_PRELOAD)
  - após usar o comando `-l | grep LD_PRELOAD` confirma que o `env_keep+=LD_PRELOAD` está ativo
 ```
+user@debian:~$ -l | grep LD_PRELOAD
+
 #Saída: 
 
 env_keep+=LD_PRELOAD 
