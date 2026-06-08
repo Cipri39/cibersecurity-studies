@@ -1,0 +1,4 @@
+#Ignorar executáveis e arquivos objetos
+hello_world
+*.o
+*.out
